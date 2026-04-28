@@ -12,6 +12,9 @@ name: 'Update schedule'
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write  # Add this to grant write access to the repository
+
 jobs:
   push:
     runs-on: ${{ matrix.operating-system }}
